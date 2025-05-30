@@ -1,6 +1,8 @@
 import random
 import math
 
+"""DIEGO ASPIROS BERMUDEZ - N00395102"""
+
 def generar_coordenadas(cantidad):
     return [[random.randint(-81, 81), random.randint(-81, 81)] for _ in range(cantidad)]
 
@@ -23,7 +25,7 @@ def divide_y_venceras(puntos):
     if len(puntos) == 0:
         return None
     if len(puntos) == 1:
-        # Verificar condición
+
         if puntos[0][0] > 0 and puntos[0][1] < 0:
             return puntos[0]
         else:
